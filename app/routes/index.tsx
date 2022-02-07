@@ -55,6 +55,7 @@ export const action: ActionFunction = async ({ request }) => {
     default:
       throw new Error(`Unknown "${action}" action.`);
   }
+  return {};
 };
 
 export type LoaderData = {
